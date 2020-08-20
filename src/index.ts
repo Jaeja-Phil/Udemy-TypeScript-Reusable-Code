@@ -1,16 +1,8 @@
-import { CsvFileReader } from './CsvFileReader'
+import { CsvFileReader } from './CsvFileReader';
+import { MatchResult } from './MatchResult';
 
-const reader = new CsvFileReader('football.csv')
+const reader = new CsvFileReader('football.csv');
 reader.read();
-
-// enum - enumeration
-enum MatchResult {
-  HomeWin = 'H',
-  AwayWin = 'A',
-  Draw = 'D'
-}
-
-MatchResult.Draw === 'D'
 
 let manUnitedWins = 0;
 
